@@ -39,3 +39,8 @@ target/
 entrypoint/pom.xml.releaseBackup
 
 entrypoint/release.properties
+
+# VERTIGO
+.project
+.settings
+.vscode
