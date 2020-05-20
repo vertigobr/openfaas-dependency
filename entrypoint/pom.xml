@@ -39,30 +39,6 @@
 		<url>https://github.com/vertigobr/openfaas-dependency</url>
 	</scm>
 
-
-	<!--
-	<issueManagement>
-		<system>github</system>
-		<url>http://github.com/kameshchauhan/openfaas-dependency/issues</url>
-	</issueManagement>
-
-	<distributionManagement>
-		<downloadUrl>http://github.com/kameshchauhan/openfaas-dependency/wiki/Download-and-Install</downloadUrl>
-
-		<snapshotRepository>
-			<id>ossrh</id>
-			<name>Nexus Snapshot Repository</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-		</snapshotRepository>
-
-		<repository>
-			<id>ossrh</id>
-			<name>Nexus Release Repository</name>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-		</repository>
-	</distributionManagement>
-	-->
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jdkVersion>1.8</jdkVersion>
