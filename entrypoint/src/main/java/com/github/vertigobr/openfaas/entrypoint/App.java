@@ -1,12 +1,12 @@
 // Copyright (c) OpenFaaS Author(s) 2018. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-package com.github.kameshchauhan.openfaas.entrypoint;
+package com.github.vertigobr.openfaas.entrypoint;
 
-import com.github.kameshchauhan.openfaas.model.IHandler;
-import com.github.kameshchauhan.openfaas.model.IRequest;
-import com.github.kameshchauhan.openfaas.model.IResponse;
-import com.github.kameshchauhan.openfaas.model.Request;
+import com.github.vertigobr.openfaas.model.IHandler;
+import com.github.vertigobr.openfaas.model.IRequest;
+import com.github.vertigobr.openfaas.model.IResponse;
+import com.github.vertigobr.openfaas.model.Request;
 import com.sun.net.httpserver.Headers;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
@@ -46,7 +46,7 @@ public class App {
         Object myClassObject = null;
         try {
             // Create a new JavaClassLoader
-            ClassLoader classLoader = com.github.kameshchauhan.openfaas.entrypoint.App.class.getClassLoader();
+            ClassLoader classLoader = com.github.vertigobr.openfaas.entrypoint.App.class.getClassLoader();
             // Load the target class using its binary name
             Class loadedMyClass = classLoader.loadClass(classBinName);
             System.out.println("Running Handler: " + loadedMyClass.getName());

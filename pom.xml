@@ -1,15 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.github.kameshchauhan.openfaas</groupId>
+	<groupId>com.github.vertigobr.ipaas</groupId>
 	<artifactId>openfaas-dependency</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>${revision}</version>
 	<packaging>pom</packaging>
 
 	<name>${project.groupId}:${project.artifactId}</name>
-	<description>A data model dependency for OpenFaaS function using java8 template.</description>
-	<url>http://github.com/kameshchauhan/openfaas-dependency</url>
+	<description>OpenFaaS dependencies for java/maven templates. Based on original work from kameshchauhan/openfaas-dependency.</description>
+	<url>https://github.com/vertigobr/openfaas-dependency</url>
+
+	<properties>
+		<revision>1.0.0-SNAPSHOT</revision>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jdkVersion>1.8</jdkVersion>
+		<arguments />
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		
+		<gpg.keyname>68467D18455C6B30127D0D1989850E7895201A52</gpg.keyname>
+		
+	</properties>
 
 	<modules>
 		<module>model</module>
@@ -25,38 +37,27 @@
 
 	<developers>
 		<developer>
-			<id>kameshc</id>
-			<name>Kamesh Chauhan</name>
-			<email>kamesh.chauhan@gmail.com</email>
+			<name>Andre Fernandes</name>
+			<email>andre@vertigo.com.br</email>
+			<organization>Vertigo</organization>
+			<organizationUrl>https://vertigo.com.br</organizationUrl>
 		</developer>
 	</developers>
 
-	<contributors>
-		<contributor>
-			<name>OpenFaaS Contributors</name>
-			<organization>OpenFaaS</organization>
-			<email />
-			<url>http://github.com/openfaas/templates/graphs/contributors</url>
-			<roles>
-				<role>developers</role>
-			</roles>
-		</contributor>
-	</contributors>
-
 	<scm>
-		<connection>scm:git:ssh://git@github.com/kameshchauhan/openfaas-dependency.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com/kameshchauhan/openfaas-dependency.git</developerConnection>
-		<url>http://github.com/kameshchauhan/openfaas-dependency</url>
-		<tag>openfaas-dependency-1.0.0</tag>
+		<connection>scm:git:ssh://git@github.com:vertigobr/openfaas-dependency.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com:vertigobr/openfaas-dependency.git</developerConnection>
+		<url>https://github.com/vertigobr/openfaas-dependency</url>
 	</scm>
 
+	<!--
 	<issueManagement>
 		<system>github</system>
 		<url>http://github.com/kameshchauhan/openfaas-dependency/issues</url>
 	</issueManagement>
+	-->
 
 	<distributionManagement>
-		<downloadUrl>http://github.com/kameshchauhan/openfaas-dependency/wiki/Download-and-Install</downloadUrl>
 
 		<snapshotRepository>
 			<id>ossrh</id>
@@ -69,20 +70,8 @@
 			<name>Nexus Release Repository</name>
 			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
-		<site>
-			<id>kameshchauhan.openfaas</id>
-			<url>http://github.com/kameshchauhan/openfaas-dependency/wiki</url>
-		</site>
-	</distributionManagement>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<jdkVersion>1.8</jdkVersion>
-		<arguments />
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-		<gpg.keyname>10551C440B863FCE84CF35C0FA0DEDF45D1B627D</gpg.keyname>
-	</properties>
+	</distributionManagement>
 
 	<dependencies>
 		<dependency>

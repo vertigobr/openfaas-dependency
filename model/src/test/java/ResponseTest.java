@@ -4,7 +4,7 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-import com.github.kameshchauhan.openfaas.model.Response;
+import com.github.vertigobr.openfaas.model.Response;
 
 public class ResponseTest {
     @Test public void testResponseHeaderSetGetValue() {

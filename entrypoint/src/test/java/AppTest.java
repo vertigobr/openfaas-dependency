@@ -1,7 +1,7 @@
 // Copyright (c) OpenFaaS Author(s) 2018. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-import com.github.kameshchauhan.openfaas.entrypoint.App;
+import com.github.vertigobr.openfaas.entrypoint.App;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -14,7 +14,7 @@ import java.net.URL;
      @Test
      public void testAppHasAGreeting() {
          try {
-             App app = new App("com.github.kameshchauhan.openfaas.function.Handler");
+             App app = new App("com.github.vertigobr.openfaas.function.Handler");
              URL url = new URL("http://localhost:8082/"); // create url object for the given string
              HttpURLConnection connection = (HttpURLConnection) url.openConnection();
              connection.connect(); //connect
