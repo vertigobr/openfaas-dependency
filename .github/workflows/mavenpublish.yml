@@ -37,3 +37,5 @@ jobs:
       run: mvn deploy -s .maven.xml -Dgpg.passphrase=$GPG_PASSPHRASE
       env:
         GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+        SONATYPE_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
+        SONATYPE_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
