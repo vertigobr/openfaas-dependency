@@ -17,6 +17,16 @@
 	<description>A data model dependency for OpenFaaS function used by java/maven templates. Based on original work from kameshchauhan/openfaas-dependency.</description>
 	<url>https://github.com/vertigobr/openfaas-dependency</url>
 
+	<properties>
+		<revision>1.0.0-SNAPSHOT</revision>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jdkVersion>1.8</jdkVersion>
+		<arguments />
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<gpg.keyname>68467D18455C6B30127D0D1989850E7895201A52</gpg.keyname>
+	</properties>
+
 	<licenses>
 		<license>
 			<name>MIT License</name>
@@ -38,15 +48,6 @@
 		<developerConnection>scm:git:ssh://git@github.com:vertigobr/openfaas-dependency.git</developerConnection>
 		<url>https://github.com/vertigobr/openfaas-dependency</url>
 	</scm>
-
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<jdkVersion>1.8</jdkVersion>
-		<arguments />
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-		<gpg.keyname>68467D18455C6B30127D0D1989850E7895201A52</gpg.keyname>
-	</properties>
 
 	<dependencies>
 		<dependency>
