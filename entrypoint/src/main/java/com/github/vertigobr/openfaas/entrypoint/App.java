@@ -26,9 +26,9 @@ public class App {
     public App(String handlerName) throws IOException {
         createServer(handlerName);
     }
-
     public static void main(String[] args) throws Exception {
-        createServer(args[0]);
+        String handlerName = args[0];
+        createServer(handlerName);
     }
 
     private static void createServer(String handlerName) throws IOException {
@@ -42,6 +42,7 @@ public class App {
         server.setExecutor(null); // creates a default executor
         server.start();
     }
+
     private static Object loadTheFunctionHandler(String classBinName){
         Object myClassObject = null;
         try {
@@ -60,6 +61,7 @@ public class App {
         }
         return myClassObject;
     }
+
     static class InvokeHandler implements HttpHandler {
         IHandler handler;
 
@@ -94,6 +96,10 @@ public class App {
                     reqHeadersMap.put(header.getKey(), headerValues.get(0));
                 }
             }
+
+            // for(Map.Entry<String, String> entry : reqHeadersMap.entrySet()) {
+            //     System.out.println("Req header " + entry.getKey() + " " + entry.getValue());
+            // }
 
             IRequest req = new Request(requestBody, reqHeadersMap,t.getRequestURI().getRawQuery(), t.getRequestURI().getPath());
             

@@ -14,7 +14,7 @@ import java.net.URL;
      @Test
      public void testAppHasAGreeting() {
          try {
-             App app = new App("com.github.vertigobr.openfaas.function.Handler");
+             App app = new App("TestHandler");
              URL url = new URL("http://localhost:8082/"); // create url object for the given string
              HttpURLConnection connection = (HttpURLConnection) url.openConnection();
              connection.connect(); //connect
