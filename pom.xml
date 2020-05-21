@@ -4,7 +4,7 @@
 
 	<groupId>com.github.vertigobr.ipaas</groupId>
 	<artifactId>openfaas-dependency</artifactId>
-	<version>${revision}</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>${project.groupId}:${project.artifactId}</name>
@@ -12,7 +12,6 @@
 	<url>https://github.com/vertigobr/openfaas-dependency</url>
 
 	<properties>
-		<revision>1.0.0-SNAPSHOT</revision>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jdkVersion>1.8</jdkVersion>
 		<arguments />

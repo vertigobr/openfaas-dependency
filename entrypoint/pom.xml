@@ -5,12 +5,11 @@
 	<parent>
 		<groupId>com.github.vertigobr.ipaas</groupId>
 		<artifactId>openfaas-dependency</artifactId>
-		<version>${revision}</version>
+		<version>1.0.0-SNAPSHOT</version>
 		<relativePath>../</relativePath>
 	</parent>
 
 	<artifactId>entrypoint</artifactId>
-	<version>${revision}</version>
 	<packaging>jar</packaging>
 
 	<name>${project.groupId}:${project.artifactId}</name>
@@ -52,7 +51,7 @@
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>model</artifactId>
-			<version>${revision}</version>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.google.guava</groupId>
