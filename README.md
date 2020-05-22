@@ -10,15 +10,15 @@ The dependencies below must be used in java/maven templates for OpenFaas:
 
 ```xml
 <dependencies>
-	<dependency>
+    <dependency>
         <groupId>com.github.vertigobr.ipaas</groupId>
         <artifactId>model</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </dependency>
-	<dependency>
+    <dependency>
         <groupId>com.github.vertigobr.ipaas</groupId>
         <artifactId>entrypoint</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </dependency>
 </dependencies>
 ```
