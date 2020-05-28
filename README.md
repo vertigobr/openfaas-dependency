@@ -13,12 +13,12 @@ The dependencies below must be used in java/maven templates for OpenFaas:
     <dependency>
         <groupId>com.github.vertigobr.ipaas</groupId>
         <artifactId>model</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </dependency>
     <dependency>
         <groupId>com.github.vertigobr.ipaas</groupId>
         <artifactId>entrypoint</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </dependency>
 </dependencies>
 ```
