@@ -11,6 +11,7 @@ import com.sun.net.httpserver.Headers;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
+import java.util.concurrent.Executor;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -39,8 +40,17 @@ public class App {
         InvokeHandler invokeHandler = new InvokeHandler(handler);
 
         server.createContext("/", invokeHandler);
-        server.setExecutor(null); // creates a default executor
+        server.setExecutor(getExecutor()); // creates a default executor
         server.start();
+    }
+
+    private static Executor getExecutor() {
+        Executor result = null;
+        String envExecutor = System.getenv("executor");
+        if ("multi".equalsIgnoreCase(envExecutor)) {
+            result = java.util.concurrent.Executors.newCachedThreadPool(); // PRECISA LIMITAR
+        }
+        return result;
     }
 
     private static Object loadTheFunctionHandler(String classBinName){
